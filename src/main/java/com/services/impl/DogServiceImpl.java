@@ -4,9 +4,8 @@ import com.dtos.DogDto;
 import com.entities.Dog;
 import com.repositories.DogRepository;
 import com.services.DogService;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
-
-import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,9 +44,7 @@ public class DogServiceImpl implements DogService {
     public List<DogDto> getAllDogs() {
         List<DogDto> dogDtos = new ArrayList<>();
         List<Dog> dogs = dogRepository.findAll();
-        dogs.forEach(dog -> {
-            dogDtos.add(dogEntityToDto(dog));
-        });
+        dogs.forEach(dog -> dogDtos.add(dogEntityToDto(dog)));
         return dogDtos;
     }
 
