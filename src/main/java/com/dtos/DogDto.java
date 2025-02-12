@@ -1,8 +1,8 @@
 package com.dtos;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.NotBlank;
 
 @Data
 public class DogDto {
