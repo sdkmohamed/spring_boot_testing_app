@@ -14,7 +14,7 @@ Projet de test pour Spring Boot dans le cadre du TP API M1 Informatique.
 
 1. Cloner ce dépôt :
    ```bash
-   git clone https://github.com/ton-utilisateur/ton-repo.git
+   git clone https://github.com/sdkmohamed/spring_boot_testing_app.git
    cd ton-repo
 2. Installer les dépendances et compiler le projet :
 ./gradlew build
